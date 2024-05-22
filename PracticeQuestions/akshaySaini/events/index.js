@@ -1,0 +1,2 @@
+// Event delegation is a design pattern in JavaScript that attaches a single event listener to a common ancestor, rather than attaching listeners to multiple individual elements. It takes advantage of event propagation, specifically the "bubbling" phase, where an event travels up the DOM hierarchy from the target element to the root
+// Event delegation is a powerful technique that simplifies event handling, improves performance, and enhances the flexibility of your code.

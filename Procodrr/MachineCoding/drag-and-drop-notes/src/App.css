@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.outerDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.innerDiv {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  cursor: move;
+}
+
+.innerDiv:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+.innerDiv:nth-child(2) {
+  top: 0;
+  left: 100px;
+  background-color: lightgreen;
+}
+.innerDiv:nth-child(3) {
+  top: 0;
+  left: 200px;
+  background-color: palegoldenrod;
+}
+
+.note-div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid black;
+  user-select: none;
+  padding: 10px;
+  width: 200px;
+  cursor: move;
+  background-color: lightyellow;
+}

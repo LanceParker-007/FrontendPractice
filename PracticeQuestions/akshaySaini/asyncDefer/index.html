@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- When nothing(async or defer attribute) is used
+    the browser parse the HTML line by line until it encounters a script tag. As soon as
+    it encounters a script tag, it stops parsing the HTML and starts fetching the script, 
+    after fetching it executes it and the after
+the script execution is completed, browser again starts parsing the HTML -->
+    <script src="diffBtwAsyncDefer.js"></script>
+
+    <!-- When we use async attribute the browser parse the HTML line by line 
+        until it encounters a script tag. As soon as it encounters a script tag, 
+        it starts fetching the script along with parsing the HTMl, after fetching the script,
+        when browser starts executing it, the browser stops parsing of HTMl and the after
+        the script execution is completed, browser again starts parsing the HTML -->
+    <script async src="diffBtwAsyncDefer.js"></script>
+
+    <!-- When we use defer attribute the browser parse the HTML line by line 
+        until it encounters a script tag. As soon as it encounters a script tag, 
+        it starts fetching the script along with parsing the HTMl, after fetching the script,
+        when browser does not start executing the script, the browser continues parsing of HTMl.
+        Once the HTMl parsing is completed and scripts were also fetched, now browser starts 
+        executing the scripts-->
+    <script defer src="diffBtwAsyncDefer.js"></script>
+
+    <!-- Async does not guarantee the the order of the execution of scripts but defer does. So when 
+    using independent scripts we can use async and defer in other 
+    scenarios  -->
+
+    <!-- Que: Scripts in Head tag? -->
+  </body>
+</html>
