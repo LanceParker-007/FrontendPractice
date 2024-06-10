@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #parent {
+        height: 100vh;
+        width: 100vw;
+        background-color: red;
+
+        /* 1st way */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* 2nd way */
+        /* position: relative; */
+
+        /* 3rd way */
+        /* display: grid;
+        justify-content: center;
+        align-items: center; */
+      }
+
+      #divToBeCentered {
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+
+        /* 2nd way */
+        /* position: absolute;
+        top: calc(50%);
+        left: calc(50%);
+        transform: translate(-50%, -50%); */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="divToBeCentered"></div>
+    </div>
+  </body>
+</html>
